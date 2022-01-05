@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+
     $('#weekendPractice').change(function(){
         const selected=($("input[name='weekendSelect']:checked").val());
         if(selected=="certainPeriod") {
@@ -23,3 +26,7 @@ $(document).ready(function(){
         }
     });
 });
+
+(function() {
+    dragula([].slice.apply(document.querySelectorAll('.nested')));
+})();
