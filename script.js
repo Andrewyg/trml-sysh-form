@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $("#sortable").sortable();
-    $("#sortable").disableSelection();
+    $("#prioritySort").sortable();
+    $("#prioritySort").disableSelection();
 
     $('#weekendPractice').change(function(){
         const selected=($("input[name='weekendSelect']:checked").val());
@@ -26,7 +26,3 @@ $(document).ready(function(){
         }
     });
 });
-
-(function() {
-    dragula([].slice.apply(document.querySelectorAll('.nested')));
-})();
