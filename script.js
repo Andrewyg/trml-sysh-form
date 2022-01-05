@@ -16,8 +16,10 @@ $(document).ready(function(){
         }
         if(selected=="nope") {
             $("#dismissTime").addClass("visually-hidden");
+            $("#weekinDelay").addClass("visually-hidden");
         } else {
             $("#dismissTime").removeClass("visually-hidden");
+            $("#weekinDelay").removeClass("visually-hidden");
         }
     });
 });

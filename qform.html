@@ -15,7 +15,7 @@
             <div class="container py-4">
                 <header class="pb-3 mb-4 border-bottom">
                     <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                        <span class="fs-4">Jumbotron example</span>
+                        <span class="fs-4">問題表單</span>
                     </a>
                 </header>
 
@@ -123,10 +123,41 @@
                             <span class="input-group-text">：</span>
                             <select class="form-select" aria-label="weekinOtherSelect">
                                 <option value="00" selected>00</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
                                 <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
                             </select>
                         </div>
+                        <div class="mb-3" id="weekinDelay">
+                            <label for="exampleFormControlTextarea1" class="form-label">如果到時候無法在預定的時間離開，要怎麼處理？</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="leaveSelect" id="" value="leaveNow" checked>
+                                <label class="form-check-label" for="">
+                                    時間一到，我就得離開
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delayFine" id="" value="leaveNow">
+                                <label class="form-check-label" for="">
+                                    時間拖到我也沒關係
+                                </label>
+                            </div>
+                        </div>
                     </div>
+
+                    <hr />
+                    <h2>說點話吧</h2>
+                    <div id="practiceTalk">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">為什麼上面你會這樣選呢？</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="像是因為：不能留太晚、家長有規定到家時間、公車班次、需要讀書的時間？"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 mb-4 bg-light rounded-3">
+                    <h2>事情輕重緩急排序</h2>
                 </div>
         </main>
 
