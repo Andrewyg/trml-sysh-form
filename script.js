@@ -33,7 +33,7 @@ $(document).ready(function(){
             $("#scene1longQ").addClass("visually-hidden");
         }
     });
-    $("#mainForm").submit(function() { alert($("#prioritySort").sortable('toArray').toString());
+    $("#mainForm").submit(function() { // alert($("#prioritySort").sortable('toArray').toString());
         $("#prioritySortRes").val($("#prioritySort").sortable('toArray').toString());
     });
 });
