@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $("#prioritySort").sortable();
     $("#prioritySort").disableSelection();
+    $("#prioritySort2").sortable();
+    $("#prioritySort2").disableSelection();
 
     $('#weekendPractice').change(function(){
         const selected=($("input[name='weekendSelect']:checked").val());
@@ -35,11 +37,9 @@ $(document).ready(function(){
     });
     $('#scene4selection').change(function(){
         const selected=($("input[name='scene4selection']:checked").val());
-        if(selected=="tryNotCollide") {
-            $("#ifCollide").removeClass("visually-hidden");
-        } else {
-            $("#ifCollide").addClass("visually-hidden");
-        }
+        if(selected=="tryNotCollide") { $("#ifCollide").removeClass("visually-hidden"); } else { $("#ifCollide").addClass("visually-hidden"); }
+        if(selected=="focusOnOne") { $("#focusOne").removeClass("visually-hidden"); } else { $("#focusOne").addClass("visually-hidden"); }
+        if(selected=="keepBoth") { $("#keepBoth").removeClass("visually-hidden"); } else { $("#keepBoth").addClass("visually-hidden"); }
     });
     $("#mainForm").submit(function() { // alert($("#prioritySort").sortable('toArray').toString());
         $("#prioritySortRes").val($("#prioritySort").sortable('toArray').toString());
