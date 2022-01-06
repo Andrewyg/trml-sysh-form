@@ -47,4 +47,6 @@ $(document).ready(function(){
     $("#scoreStopOther").focus(function() {
         $("#scoreStopOtherChecked").prop('checked', true);
     });
+    $("#scene2selectOther").focus(function() { $('input:radio[name="scene2select"]').filter('[value="other"]').prop('checked', true); });
+    $("#scene4collideOther").focus(function() { $('input:radio[name="scene4ifCollideSelection"]').filter('[value="other"]').prop('checked', true); });
 });
