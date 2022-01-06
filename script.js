@@ -25,4 +25,12 @@ $(document).ready(function(){
             $("#weekinDelay").removeClass("visually-hidden");
         }
     });
+    $('#scene1selection').change(function(){
+        const selected=($("input[name='scene1select']:checked").val());
+        if(selected=="yes") {
+            $("#scene1longQ").removeClass("visually-hidden");
+        } else {
+            $("#scene1longQ").addClass("visually-hidden");
+        }
+    });
 });
