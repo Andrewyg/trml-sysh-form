@@ -63,9 +63,9 @@
                             <div id="customTimePeriodforWeekend" class="visually-hidden">
                                 <label class="form-label">請輸入可以的時段</label>
                                 <div class="input-group mb-3">
-                                    <input type="time" class="form-control" id="acceptableTimeFrom" aria-describedby="numHelp" name="certainPeriodHr">
+                                    <input type="time" class="form-control" id="acceptableTimeFrom" aria-describedby="numHelp" name="certainPeriodFrom">
                                     <span class="input-group-text">至</span>
-                                    <input type="time" class="form-control" id="acceptableTimeTo" aria-describedby="numHelp" name="certainPeriodMin">
+                                    <input type="time" class="form-control" id="acceptableTimeTo" aria-describedby="numHelp" name="certainPeriodTo">
                                 </div>
                             </div>
                         </div>
@@ -114,18 +114,18 @@
                             <h3>解散時間</h3>
                             <div class="input-group mb-3" id="dismissTime">
                                 <select class="form-select" aria-label="weekinOtherSelect">
-                                    <option value="19">19</option>
-                                    <option value="20" selected>20</option>
-                                    <option value="21">21</option>
+                                    <option name="certainPeriodHr" value="19">19</option>
+                                    <option name="certainPeriodHr" value="20" selected>20</option>
+                                    <option name="certainPeriodHr" value="21">21</option>
                                 </select>
                                 <span class="input-group-text">：</span>
                                 <select class="form-select" aria-label="weekinOtherSelect">
-                                    <option value="00" selected>00</option>
-                                    <option value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                    <option value="40">40</option>
-                                    <option value="50">50</option>
+                                    <option name="certainPeriodMin" value="00" selected>00</option>
+                                    <option name="certainPeriodMin" value="10">10</option>
+                                    <option name="certainPeriodMin" value="20">20</option>
+                                    <option name="certainPeriodMin" value="30">30</option>
+                                    <option name="certainPeriodMin" value="40">40</option>
+                                    <option name="certainPeriodMin" value="50">50</option>
                                 </select>
                             </div>
                             <div class="mb-3" id="weekinDelay">
