@@ -44,4 +44,7 @@ $(document).ready(function(){
     $("#mainForm").submit(function() { // alert($("#prioritySort").sortable('toArray').toString());
         $("#prioritySortRes").val($("#prioritySort").sortable('toArray').toString());
     });
+    $("#scoreStopOther").focus(function() {
+        $("#scoreStopOtherChecked").prop('checked', true);
+    });
 });
