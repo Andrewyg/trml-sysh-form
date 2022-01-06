@@ -33,6 +33,14 @@ $(document).ready(function(){
             $("#scene1longQ").addClass("visually-hidden");
         }
     });
+    $('#scene4selection').change(function(){
+        const selected=($("input[name='scene4selection']:checked").val());
+        if(selected=="tryNotCollide") {
+            $("#ifCollide").removeClass("visually-hidden");
+        } else {
+            $("#ifCollide").addClass("visually-hidden");
+        }
+    });
     $("#mainForm").submit(function() { // alert($("#prioritySort").sortable('toArray').toString());
         $("#prioritySortRes").val($("#prioritySort").sortable('toArray').toString());
     });
