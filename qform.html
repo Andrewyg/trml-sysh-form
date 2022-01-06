@@ -490,41 +490,8 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="scene4selection" id="" value="keepBoth">
                                                 <label class="form-check-label" for="">
-                                                    兩邊都會參與，但會視情況缺席某邊練習，自己會在找時間補上
+                                                    兩邊都會參與，但會視情況缺席某邊練習，自己再找時間補上
                                                 </label>
-                                                <div class="visually-hidden" id="keepBoth">
-                                                    <label>如果你真的忙到分身乏術、筋疲力盡，仍然會自行練習嗎？</label>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self100">
-                                                        <label class="form-check-label" for="">
-                                                            會（100%）
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self80">
-                                                        <label class="form-check-label" for="">
-                                                            大致會（80%）
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self50">
-                                                        <label class="form-check-label" for="">
-                                                            沒意外會（50%）
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self30">
-                                                        <label class="form-check-label" for="">
-                                                            可能會（30%）
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self0">
-                                                        <label class="form-check-label" for="">
-                                                            不會（0%）
-                                                        </label>
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="scene4selection" id="" value="illDealItMyself">
@@ -578,6 +545,7 @@
                             </div>
                         </div><!-- Modal end -->
 
+                        <hr />
                         <h2>再排序一次吧</h2>
                         <div class="row">
                             <div class="col-3">
@@ -658,6 +626,85 @@
                             </div>
                         </div>
 
+                    </div>
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <h2>組員問題</h2>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">如果我們組員已訂，但中途有人因個人因素（例：無法負荷、另有比賽這邊想放掉……）而退出，你的想法為何？</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="" name="crewText1"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">你覺得自己可能會在什麼情況選擇退出？</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="" name="crewText2"></textarea>
+                        </div>
+                        <p>有沒有辦法接受團隊成員改變？</p>
+                        <div id="acceptQuit">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="acceptQuitselect" id="" value="yes">
+                                <label class="form-check-label" for="">
+                                    有
+                                </label>
+                            </div>
+                            <div class="mb-3 visually-hidden" id="acceptQuitlongQ">
+                                <label for="" class="form-label">就算還要重新磨合、重新培養默契，中間可能會爭吵，也可以接受？</label>
+                                <div id="acceptRestart">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="acceptRestartselect" id="" value="yes">
+                                        <label class="form-check-label" for="">
+                                            對
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="acceptRestartselect" id="" value="no">
+                                        <label class="form-check-label" for="">
+                                            不對
+                                        </label>
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="acceptQuitsolution" rows="5" placeholder="原因為何？為什麼？" name="acceptQuitWhy"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="acceptQuitselect" id="" value="no">
+                                <label class="form-check-label" for="">
+                                    沒有
+                                </label>
+                            </div>
+                        </div>
+                        <p>15人的比賽是否同意讓其他人也陪練（他們非參賽人員，僅是想練習）？</p>
+                        <div id="additionPeople">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="additionPeopleselect" id="" value="yes">
+                                <label class="form-check-label" for="">
+                                    同意
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="additionPeopleselect" id="" value="no">
+                                <label class="form-check-label" for="">
+                                    不同意
+                                </label>
+                            </div>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="想法為何？" name="crewText3"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">覺得我們還需要有</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected value="0">0</option>
+                                <option value="any">能有幾位就幾位</option>
+                                <option value="1">1位</option>
+                                <option value="2">2位</option>
+                                <option value="3">3位</option>
+                                <option value="4">4位</option>
+                                <option value="5">5位</option>
+                                <option value="more">比上述選項更多位</option>
+                            </select>
+                            <span class="input-group-text">候補人員？</span>
+                        </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="為什麼？" name="crewText4"></textarea>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="acceptDynamicCrew" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">有辦法接受練習人數超過15人，參賽名單不固定，會依自身練習狀況、比賽成績、時間問題而決定是否參賽嗎？</label>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
