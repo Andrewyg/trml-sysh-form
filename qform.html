@@ -250,6 +250,9 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene4">
                             故事四
                         </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene5">
+                            故事五
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="scene1" tabindex="-1" aria-labelledby="" aria-hidden="true">
@@ -324,9 +327,9 @@
                                                 </label>
                                             </div> 
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="other" id="flexCheckChecked">
+                                                <input class="form-check-input" type="checkbox" value="other" id="scoreStopOtherChecked">
                                                 <label class="form-check-label" for="flexCheckChecked">
-                                                    其他 <input type="text" placeholder="請填寫" name="scoreStopOther" />
+                                                    其他 <input type="text" placeholder="請填寫" name="scoreStopOther" id="scoreStopOther" />
                                                 </label>
                                             </div> 
                                         </div>
@@ -458,7 +461,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="other">
                                                         <label class="form-check-label" for="">
-                                                            其他 <input type="text" placeholder="請填寫" name="scene4collideOther" />
+                                                            其他 <input type="text" placeholder="請填寫" name="scene4collideOther" id="scene4collideOther" />
                                                         </label>
                                                     </div>
                                                 </div>
@@ -537,6 +540,124 @@
                                 </div>
                             </div>
                         </div><!-- Modal end -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="scene5" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">情境故事三</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>如果你想要參加這些比賽，但你需要自行繳費（費用1000以上），你可以接受嗎？（願意這麼做嗎？）</p>
+                                        <div id="scene5selection">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene5selection" id="" value="yes">
+                                                <label class="form-check-label" for="">
+                                                    可以，會自己存錢或是另找辦法
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene5selection" id="" value="no">
+                                                <label class="form-check-label" for="">
+                                                    不可以，這樣我會負擔太大
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene5selection" id="" value="noOutrightGiveup">
+                                                <label class="form-check-label" for="">
+                                                    
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal end -->
+
+                        <h2>再排序一次吧</h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="" style="" id="prior1">
+                                    <div class="card"> 
+                                        <div class="card-body text-end">1.</div>
+                                    </div>
+                                </div>
+                                <div class="" style="" id="prior2"> <div class="card"> <div class="card-body text-end">2.</div> </div> </div>
+                                <div class="" style="" id="prior3"> <div class="card"> <div class="card-body text-end">3.</div> </div> </div>
+                                <div class="" style="" id="prior4"> <div class="card"> <div class="card-body text-end">4.</div> </div> </div>
+                                <div class="" style="" id="prior5"> <div class="card"> <div class="card-body text-end">5.</div> </div> </div>
+                                <div class="" style="" id="prior6"> <div class="card"> <div class="card-body text-end">6.</div> </div> </div>
+                                <div class="" style="" id="prior7"> <div class="card"> <div class="card-body text-end">7.</div> </div> </div>
+                                <div class="" style="" id="prior8"> <div class="card"> <div class="card-body text-end">8.</div> </div> </div>
+                                <div class="" style="" id="prior9"> <div class="card"> <div class="card-body text-end">9.</div> </div> </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-block">
+                                    <div id="prioritySort">
+                                        <input type="text" name="prioritySortRes" id="prioritySortRes" class="visually-hidden" />
+                                        <!-- Item -->
+                                        <div class="" style="" id="ironman">
+                                            <div class="card"> 
+                                                <div class="card-body">智鐵</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="thinkorigin">
+                                            <div class="card"> 
+                                                <div class="card-body">思源</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="littlepaper">
+                                            <div class="card"> 
+                                                <div class="card-body">小論文</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="readingthought">
+                                            <div class="card"> 
+                                                <div class="card-body">閱讀心得</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="scienceresearchcompetition">
+                                            <div class="card"> 
+                                                <div class="card-body">自然探究與實作的競賽</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="subjectability">
+                                            <div class="card"> 
+                                                <div class="card-body">學科能力競賽</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="learningrecord">
+                                            <div class="card"> 
+                                                <div class="card-body">學習歷程</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="examscore">
+                                            <div class="card"> 
+                                                <div class="card-body">課業</div>
+                                            </div>
+                                        </div>
+                                        <!-- Item -->
+                                        <div class="" style="" id="club">
+                                            <div class="card"> 
+                                                <div class="card-body">社團成發與比賽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
