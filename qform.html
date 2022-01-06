@@ -242,6 +242,9 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene1">
                             故事一
                         </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene2">
+                            故事二
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="scene1" tabindex="-1" aria-labelledby="" aria-hidden="true">
@@ -272,54 +275,110 @@
                                             </div>
                                         </div>
                                         <div id="scoreStopMultiple">
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="fallOutFromTop3" id="flexCheckDefault">
-                                               <label class="form-check-label" for="flexCheckDefault">
-                                                   前三退步到沒有前三                                                   
-                                               </label>
-                                           </div>
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="fallOutFromTop10" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   前十退步到沒有前十
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="rankMid" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   班排變成中後（約18-22）
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="rankBehind" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   班排變成倒數（約26後）
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="subjectFailed" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   原先都及格而某科突然不及格
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="subjectFallFrom80" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   原先強科的成績都80突然掉到及格邊緣
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="littleExam" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   小考成績開始退步
-                                               </label>
-                                           </div> 
-                                           <div class="form-check">
-                                               <input class="form-check-input" type="checkbox" value="other" id="flexCheckChecked">
-                                               <label class="form-check-label" for="flexCheckChecked">
-                                                   其他 <input type="text" placeholder="請填寫" />
-                                               </label>
-                                           </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="fallOutFromTop3" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    前三退步到沒有前三                                                   
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="fallOutFromTop10" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    前十退步到沒有前十
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="rankMid" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    班排變成中後（約18-22）
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="rankBehind" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    班排變成倒數（約26後）
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="subjectFailed" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    原先都及格而某科突然不及格
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="subjectFallFrom80" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    原先強科的成績都80突然掉到及格邊緣
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="littleExam" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    小考成績開始退步
+                                                </label>
+                                            </div> 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="other" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    其他 <input type="text" placeholder="請填寫" name="scoreStopOther" />
+                                                </label>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss"modal">儲存並關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="scene2" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">情境故事二</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>如果高二下，你因為練習而比平常晚到家，因為練習假日人都不在家，而與家人起衝突，你會怎麼處理?</p>
+                                        <div id="scene2selection">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="requiredNothingWrong">
+                                                <label class="form-check-label" for="">
+                                                    跟他說我會這樣也是因為練習所需，沒什麼不好
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="noWorry">
+                                                <label class="form-check-label" for="">
+                                                    跟他說我會自己好好規劃時間，不用擔心
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="hasValue">
+                                                <label class="form-check-label" for="">
+                                                    跟他說我練習會從中學到什麼什麼，其實也是很有價值的
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="proveByAction">
+                                                <label class="form-check-label" for="">不多說什麼，用行動證明（像是成績不因此而退步）</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="dontListen">
+                                                <label class="form-check-label" for="">不理他，依舊照自己行事</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="fight">
+                                                <label class="form-check-label" for="">直接跟他吵架</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene2select" id="" value="other">
+                                                <label class="form-check-label" for="">
+                                                    其他 <input type="text" placeholder="請填寫" name="scene2selectOther" />
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
