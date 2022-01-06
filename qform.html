@@ -29,7 +29,6 @@
                             <input required type="checkbox" class="form-check-input" id="confirmCheckbox">
                             <label class="form-check-label" for="exampleCheck1">我了解</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                     <div class="p-5 mb-4 bg-light rounded-3">
                         <h1>練習時間</h1>
@@ -151,7 +150,7 @@
                         <div id="practiceTalk">
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">為什麼上面你會這樣選呢？</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="像是因為：不能留太晚、家長有規定到家時間、公車班次、需要讀書的時間？"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="像是因為：不能留太晚、家長有規定到家時間、公車班次、需要讀書的時間？" name="practiceTalk"></textarea>
                             </div>
                         </div>
                     </div>
@@ -245,6 +244,9 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene2">
                             故事二
                         </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene3">
+                            故事三
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="scene1" tabindex="-1" aria-labelledby="" aria-hidden="true">
@@ -265,7 +267,7 @@
                                             </div>
                                             <div class="mb-3 visually-hidden" id="scene1longQ">
                                                 <label for="" class="form-label">那你會怎麼解決？</label>
-                                                <textarea class="form-control" id="scene1solution" rows="5" placeholder=""></textarea>
+                                                <textarea class="form-control" id="scene1solution" rows="5" placeholder="" name="scene1keepGoing"></textarea>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="scene1select" id="" value="no">
@@ -274,6 +276,7 @@
                                                 </label>
                                             </div>
                                         </div>
+                                        <p>成績退步的停損點？（退步的程度到多少你會無法接受）</p>
                                         <div id="scoreStopMultiple">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="fallOutFromTop3" id="flexCheckDefault">
@@ -326,8 +329,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss"modal">儲存並關閉</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
                                     </div>
                                 </div>
                             </div>
@@ -382,13 +384,98 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss"modal">儲存並關閉</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="scene3" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">情境故事三</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>如果在練習期間同時社團又有比賽要準備，你會如何安排？</p>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="" name="scene3how"></textarea>
+                                        <p>如果社團那邊給壓力，練習時間就是一定要到，而你又會跟我們練習時間撞在一起，你會？</p>
+                                        <div id="scene3selection">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene3canHold" id="" value="yes">
+                                                <label class="form-check-label" for="">
+                                                    遵守承諾，仍然來練習（社團自己想辦法處理
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene3canHold" id="" value="no">
+                                                <label class="form-check-label" for="">
+                                                    無法承擔社團比賽因自己拖累（我們的練習會放掉
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal end -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="scene4" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">情境故事四</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>如果練習時間和要參加比賽（例：思源、智鐵……）的練習卡到，你會怎麼做呢？</p>
+                                        <div id="scene4selection">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="tryNotCollide">
+                                                <label class="form-check-label" for="">
+                                                    想盡辦法規畫好行程，盡量不衝突
+                                                </label>
+                                            </div>
+                                            <div class="visually-hidden" id="ifCollide">
+                                                <label>如果真的衝突到你會？</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupTRML">
+                                                    <label class="form-check-label" for="">
+                                                        放掉TRML
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupOwnContest">
+                                                    <label class="form-check-label" for="">
+                                                        放掉自己的比賽
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="other">
+                                                    <label class="form-check-label" for="">
+                                                        其他 <input type="text" placeholder="請填寫" name="scene4collideOther" />
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="no">
+                                                <label class="form-check-label" for="">
+                                                    無法承擔社團比賽因自己拖累（我們的練習會放掉
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Modal end -->
                     </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
         </main>
