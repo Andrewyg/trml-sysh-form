@@ -247,6 +247,9 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene3">
                             故事三
                         </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scene4">
+                            故事四
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="scene1" tabindex="-1" aria-labelledby="" aria-hidden="true">
@@ -438,32 +441,92 @@
                                                 <label class="form-check-label" for="">
                                                     想盡辦法規畫好行程，盡量不衝突
                                                 </label>
-                                            </div>
-                                            <div class="visually-hidden" id="ifCollide">
-                                                <label>如果真的衝突到你會？</label>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupTRML">
-                                                    <label class="form-check-label" for="">
-                                                        放掉TRML
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupOwnContest">
-                                                    <label class="form-check-label" for="">
-                                                        放掉自己的比賽
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="other">
-                                                    <label class="form-check-label" for="">
-                                                        其他 <input type="text" placeholder="請填寫" name="scene4collideOther" />
-                                                    </label>
+                                                <div class="visually-hidden" id="ifCollide">
+                                                    <label>如果真的衝突到你會？</label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupTRML">
+                                                        <label class="form-check-label" for="">
+                                                            放掉TRML
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="giveupOwnContest">
+                                                        <label class="form-check-label" for="">
+                                                            放掉自己的比賽
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4ifCollideSelection" id="" value="other">
+                                                        <label class="form-check-label" for="">
+                                                            其他 <input type="text" placeholder="請填寫" name="scene4collideOther" />
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="no">
+                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="focusOnOne">
                                                 <label class="form-check-label" for="">
-                                                    無法承擔社團比賽因自己拖累（我們的練習會放掉
+                                                    打算就好好專心在某一比賽就好
+                                                </label>
+                                                <div class="visually-hidden" id="focusOne">
+                                                    <label>那你的重心會是？</label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4focusOneSelection" id="" value="focusTRML">
+                                                        <label class="form-check-label" for="">
+                                                            TRML
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4focusOneSelection" id="" value="focusOwnContest">
+                                                        <label class="form-check-label" for="">
+                                                            自己的比賽
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="keepBoth">
+                                                <label class="form-check-label" for="">
+                                                    兩邊都會參與，但會視情況缺席某邊練習，自己會在找時間補上
+                                                </label>
+                                                <div class="visually-hidden" id="keepBoth">
+                                                    <label>如果你真的忙到分身乏術、筋疲力盡，仍然會自行練習嗎？</label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self100">
+                                                        <label class="form-check-label" for="">
+                                                            會（100%）
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self80">
+                                                        <label class="form-check-label" for="">
+                                                            大致會（80%）
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self50">
+                                                        <label class="form-check-label" for="">
+                                                            沒意外會（50%）
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self30">
+                                                        <label class="form-check-label" for="">
+                                                            可能會（30%）
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="scene4keepBothSelection" id="" value="self0">
+                                                        <label class="form-check-label" for="">
+                                                            不會（0%）
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="scene4selection" id="" value="illDealItMyself">
+                                                <label class="form-check-label" for="">
+                                                    不論如何都一定會出席，會自己處理也想好解決之道
                                                 </label>
                                             </div>
                                         </div>
